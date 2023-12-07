@@ -20,10 +20,11 @@ public class ComentarioModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id_comentario", nullable = false)
+    @Column(name = "idComentario", nullable = false)
 
-    private UUID comentarios;
-
+    private UUID idComentario;
+    private UUID id_usuario;
+    private UUID idPost;
     private String texto;
 
 }
